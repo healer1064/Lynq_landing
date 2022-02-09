@@ -1,0 +1,333 @@
+body {
+    background: #101011;
+    color: white;
+    margin: 0;
+}
+.wrapper {
+    width: 1320px;
+}
+/*___ header ___*/
+header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.head-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.link-div {
+    display: inline-block;
+    padding-right: 250px;
+}
+.link-div a {
+    color: white;
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+}
+.link-div a:nth-child(1) {
+    margin-right: 38px;
+}
+/* ___ content ___ */
+.content-div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc( 100vh - 250px);
+}
+.content {
+    height: 411px;
+    background: rgba(30, 30, 32, 0.5);
+    margin: 148px 45px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.happy-section {
+    width: 580px;
+}
+.happy-section h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 74px;
+    letter-spacing: -0.03em;
+}
+.happy-section p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    height: 149px;
+}
+.email-section {
+    width: 410px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.email-section h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: -0.03em;
+    margin: 0 0 50px;
+}
+.email-section input {
+    width: 401.21px;
+    height: 57px;
+    border: 2px solid #5A27E7;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background: rgba(30, 30, 32, 0.5);
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    color: #959494;
+    padding: 0 20px;
+}
+.email-section input:focus-visible {
+    border: 2px solid #5A27E7;
+    outline: none;
+}
+.email-section .submit-btn {
+    width: 162.08px;
+    height: 35px;
+    background: #5A27E7;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin: 16px;
+    cursor: pointer;
+}
+.email-section .error-message {
+    color: red;
+    margin-top: 16px;
+    transition: all 2s;
+}
+/* ___ footer ___ */
+footer {
+    height: 150px;
+    border-top: 2px #1e1e2080 solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.other-link-div {
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.other-link-div a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+}
+.reserved-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 38px;
+    text-align: right;
+    letter-spacing: -0.500211px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.social-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+}
+.desktop {
+    display: auto;
+}
+.mobile {
+    display: none;
+}
+.display-none {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: initial;
+    }
+    .wrapper {
+        width: 333px;
+    }
+    header {
+        height: 68px;
+    }
+    .logo-div-wrapper {
+        height: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .logo-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .dropbtn {
+        color: white;
+        display: flex;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .dropdown {
+        float: right;
+        position: relative;
+        display: block;
+    }
+    .dropdown-content {
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px 12px 0;
+        text-decoration: none;
+        display: block;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .dropdown-content a:hover {
+        cursor: pointer;
+    }
+    .main-menu {
+        display: flex;
+        justify-content: center;
+    }
+    .main-menu li {
+        list-style: none;
+    }
+    .main-menu ul {
+        margin-top: 60px;
+        padding-left: 0;
+    }
+    .show {
+        display: block;
+    }
+    .logo-img {
+        height: 25px;
+        width: 87px
+    }
+    .overflow-hidden {
+        overflow: hidden;
+    }
+    .content {
+        flex-direction: column;
+        height: auto;
+        margin: 30px 0 0 0;
+        background: none;
+    }
+    .happy-section {
+        width: auto;
+    }
+    .happy-section h1 {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .happy-section p {
+        height: auto;
+    }
+    .email-section {
+        width: auto;
+        padding: 30px 0 0;
+    }
+    .email-section h2 {
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 26px;
+        margin: 0 0 38px;
+    }
+    .email-section input {
+        width: auto;
+    }
+    footer {
+        position: relative;
+        padding: 45px 0 100px;
+        margin-top: 20px;
+        height: auto;
+    }
+    .foot-div {
+        flex-direction: column;
+    }
+    .foot-div img {
+        width: 87px;
+        height: 25px;
+    }
+    .other-link-div {
+        flex-direction: column;
+        width: auto;
+        margin: 65px 0;
+        height: 125px;
+    }
+    .reserved-div {
+        flex-direction: column;
+    }
+    .social-link img {
+        width: 20px;
+    }
+}
