@@ -57,6 +57,9 @@
                     <span class="error-message display-none">Please enter a valid email address</span>
                     <div class="submit-btn">SUBMIT</div>
                 </section>
+                <section class="submit-succeed display-none">
+                    <h2>Thank you <br/> Your request was sent</h2>
+                </section>
             </div>
         </div>
         <footer>
@@ -91,6 +94,8 @@
             if (event.target.matches('.submit-btn')) {
                 var email_input = document.getElementsByClassName("email-input");
                 var error_span = document.getElementsByClassName("error-message");
+                var email_section = document.getElementsByClassName("email-section");
+                var submit_succeed = document.getElementsByClassName("submit-succeed");
                 if(validateEmail(email_input[0].value)) {
                     error_span[0].classList.add("display-none");
                     
@@ -105,8 +110,10 @@
                     xhr.send(post);
                     
                     xhr.onload = function () {
-                        if(xhr.status === 201) {
-                            console.log("Post successfully created!") 
+                        if(xhr.status === 200) {
+                            email_section[0].classList.add("display-none");
+                            submit_succeed[0].classList.remove("display-none");
+                            console.log("Post successfully created!")
                         }
                     }
                 }

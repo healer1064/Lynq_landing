@@ -129,6 +129,15 @@ header {
     margin-top: 16px;
     transition: all 2s;
 }
+.submit-succeed {
+    width: 410px;
+    padding: 40px;
+}
+.submit-succeed h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #5A27E7;
+}
 /* ___ footer ___ */
 footer {
     height: 150px;
