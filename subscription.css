@@ -125,6 +125,7 @@ header {
     cursor: pointer;
 }
 .email-section .error-message {
+    font-family: Poppins;
     color: red;
     margin-top: 16px;
     transition: all 2s;
