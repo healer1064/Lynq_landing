@@ -38,6 +38,8 @@ header {
 
 .back_btn_div a {
     cursor: pointer;
+    color: white;
+    text-decoration-line: none;
 }
 
 section h3 {
