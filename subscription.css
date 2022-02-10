@@ -134,6 +134,7 @@ header {
     padding: 40px;
 }
 .submit-succeed h2 {
+    font-family: Poppins;
     text-align: center;
     font-size: 36px;
     color: #5A27E7;
@@ -313,6 +314,9 @@ footer {
     }
     .email-section input {
         width: auto;
+    }
+    .submit-succeed h2 {
+        font-size: 28px;
     }
     footer {
         position: relative;
